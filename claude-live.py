@@ -20,7 +20,7 @@ prompt = ChatPromptTemplate.from_messages(
             "system",
             "Answer the user's question based on the below context.\n\n{context}",
         ),
-        ("user", '''{input}'''),
+        ("user", """{input}"""),
     ]
 )
 

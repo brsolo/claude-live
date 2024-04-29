@@ -28,5 +28,17 @@ With ClaudeLive, this is fixed!
 >
 >So in summary, the Commanders' top two draft picks in 2024 were quarterback Jayden Daniels and offensive tackle Braeden Daniels.
 
-### Installation and usage
+## Installation and usage
 
+Download the repo using:
+
+```
+git clone https://github.com/brsolo/claude-live
+```
+
+Then, enter your Anthropic and Tavily API keys in [config.py](/claude-live/config.py) and select which model you'd like to use. To ask a question, use the command line. For example:
+
+```
+python claude-live.py "Who did the commanders darft?"
+```
+That's it! Let me know if you have any ideas around this project.
