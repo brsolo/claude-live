@@ -42,3 +42,11 @@ Then, enter your Anthropic and Tavily API keys in [config.py](/claude-live/confi
 python claude-live.py "Who did the commanders darft?"
 ```
 That's it! Let me know if you have any ideas around this project.
+
+## Details of implementation
+
+ClaudeLive uses LangChain and Tavily to build a retrieval augmented (RAG) pipeline.
+
+Tavily provides a search API optimized for working with LLMs. The user's question is fed to Tavily via a retriever which returns with ten related documents.
+
+Those documents along with the user's question is then fed to the LLM to produce a response.
